@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "fintech",
-    "slug": "fintech",
+    "slug": "fintechdemo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -35,6 +35,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9a98172b-d13c-4f86-bfa7-0db488243162"
+      }
+    },
+    "owner": "kidthree-org"
   }
 }

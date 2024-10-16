@@ -5,7 +5,6 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 
-import { useColorScheme } from "@/components/useColorScheme";
 import Colors from "@/constants/Colors";
 import { Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -71,7 +70,7 @@ const InitialLayout = () => {
     const inAuthGroup = segments[0] === "(authenticated)";
 
     if (isSignedIn && !inAuthGroup) {
-      router.replace("/(authenticated)/(tabs)/home");
+      router.replace("/(authenticated)/(tabs)/invest");
     } else if (!isSignedIn) {
       router.replace("/");
     }
